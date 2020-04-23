@@ -17,27 +17,25 @@
 </head>
 <body>
 
+<a href="/kitaplar" class="btn btn-success btn-lg " role="button" aria-disabled="false">Tüm Kitaplar</a>
 <a href="/kitapekle" class="btn btn-primary btn-lg " role="button" aria-disabled="false">Kitap Ekle</a>
 <a href="/yazarlar" class="btn btn-primary btn-lg " role="button" aria-disabled="false">Yazar Ekle</a>
 <a href="/yayinevleri" class="btn btn-primary btn-lg " role="button" aria-disabled="false">Yayinevi Ekle</a>
-<a href="/kitaplar" class="btn btn-primary btn-lg " role="button" aria-disabled="false">Tüm Kitaplar</a>
 
 
 <div class="container">
-  <h2>Kitap Ara</h2>
+  <h4>Kitap Ara</h4>
   
   <form:form action="searchbyname" modelAttribute="kitap" method="GET">
 
   	<div class="form-group">
       <label class="control-label col-sm-1">Kitap Adı</label>
-      <div class="col-sm-5">
+      <div class="col-sm-4">
       <form:input path="kitapAdi" class="form-control" />
       </div>
     </div>
 
-
   <form:button class="btn btn-default"> Ara </form:button>
-
   </form:form>
 </div>
 

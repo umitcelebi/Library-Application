@@ -53,7 +53,7 @@
     <form:button class="btn btn-default"> Kaydet </form:button>
     
   </form:form>
-  
+</div>
 </td>
 
 <td>

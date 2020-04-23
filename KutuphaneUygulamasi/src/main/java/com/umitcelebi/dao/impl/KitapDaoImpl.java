@@ -26,12 +26,11 @@ public class KitapDaoImpl  implements KitapDao{
 	public List<Kitap> kitapListele() {
 		
 		try {
-			Query<Kitap>query=getSession().createQuery("from Kitap");
-			List<Kitap>list=query.getResultList();
-			
-			return list;
+			Query<Kitap> query =getSession().createQuery("from Kitap");
+			List<Kitap> kitaplar=query.getResultList();
+			return kitaplar;
 		} catch (Exception e) {
-			System.out.println("HATA: "+e);
+			System.out.println("Listelenirken Hata Oluþtu: "+e);
 			return null;
 		}
 	}
@@ -158,7 +157,7 @@ public class KitapDaoImpl  implements KitapDao{
 			getSession().save(kitap);
 			return true;
 		} catch (Exception e) {
-			System.out.println("HATA: "+e);
+			System.out.println("Kitap Eklenirken Hata oluþtu.: "+e);
 			return false;
 		}
 	}

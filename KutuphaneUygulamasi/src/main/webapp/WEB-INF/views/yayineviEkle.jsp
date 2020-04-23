@@ -57,6 +57,11 @@
 </div>
 </td>
 
+<c:if test="${empty yayineviList}">
+	<label class="alert alert-danger">Sistemde kayıtlı yayınevi bulunmuyor.</label>
+</c:if>
+
+<c:if test="${not empty yayineviList}">
 <td>
 <form:form>
 <div class="container">
@@ -86,7 +91,7 @@
 </div>
 </form:form>
 </td>
-
+</c:if>
 
 <td>
 <a href="/kitaplar" class="btn btn-primary btn-lg " role="button" aria-disabled="false">Geri</a>

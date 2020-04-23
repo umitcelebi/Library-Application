@@ -56,9 +56,12 @@
 </div>
 </td>
 
-<td>
+<c:if test="${empty yazarlar}">
+Sistemde yazar bulunmuyor.
+</c:if>
 
-<form:form>
+<c:if test="${not empty yazarlar}">
+<td>
 
 <div class="container">
   <h2>Yazarlar</h2>
@@ -86,9 +89,8 @@
   </table>
 </div>
 
-</form:form>
-
 </td>
+</c:if>
 
 </tr>
 

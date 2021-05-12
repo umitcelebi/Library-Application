@@ -25,7 +25,7 @@
 		<beans:property name="driverClassName" value="com.mysql.jdbc.Driver"></beans:property>
 		<beans:property name="url" value="jdbc:mysql://localhost:3306/kutuphaneotomasyon?useUnicode=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Turkey"></beans:property>
 		<beans:property name="username" value="root"></beans:property>
-		<beans:property name="password" value="Umit2580"></beans:property>
+		<beans:property name="password" value="Password"></beans:property>
 	</beans:bean>
 	
 	<beans:bean id="sessionFactory"
